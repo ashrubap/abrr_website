@@ -25,37 +25,74 @@
                         xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1 ml-1" viewBox="0 0 24 24">
                         <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
                     </svg></a>
-                <div class="group-hover:block hidden absolute  duration-300 py-4 hover:block text-gray-900  pt-5  " >
-                    <div class="shadow-md rounded-md bg-white ">
-                        <ul class="grid grid-flow-row-dense grid-cols-3 grid-rows-3  w-96 p-4 gap-4">
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                            <li>sdfghjk</li>
-                        </ul>
+                <div class="group-hover:block hidden absolute  duration-300 py-4 hover:block text-gray-900  pt-5  ">
+                    <div class="shadow-md rounded-md bg-blue-50 ">
+                        <div class="grid grid-cols-2 gap-2 p-2">
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}"
+                                        class="parent_category ">
+                                        <p >Aerospace &amp; Defense</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}"
+                                        class="parent_category">
+                                        <p >Automotive &amp; Logistics</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}" class="parent_category">
+                                        <p >Banking, Financial Services &amp; Insurance</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}"
+                                        class="parent_category">
+                                        <p >Construction &amp; Manufacturing</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}" class="parent_category">
+                                        <p >Consumer Goods</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}" class="parent_category">
+                                        <p >Energy &amp; Power</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}" class="parent_category">
+                                        <p >Food &amp; Beverage</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}" class="parent_category">
+                                        <p >Healthcare</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}"
+                                        class="parent_category">
+                                        <p >ICT, Semiconductor &amp; Electronics</p>
+                                    </a>
+                                </div>
+                                <div class=" hover:bg-blue-600 hover:text-white px-2 py-1 hover:rounded-md">
+                                    <a href="{{ url('/reports') }}"
+                                        class="parent_category">
+                                        <p >Materials &amp; Chemicals</p>
+                                    </a>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="px-3 py-2 hover:bg-gray-600 hover:text-white hover:rounded-md hover:shadow-md">
-                <a href="">About</a>
+                <a href=" {{ url('/about_us') }}">About</a>
             </div>
             <div
                 class="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
-                <a href="">Contact</a>
+                <a href="{{ url('/contact_us') }}">Contact</a>
             </div>
         </div>
     </nav>

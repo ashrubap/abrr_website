@@ -1,11 +1,13 @@
     @extends('website/layout.master')
     @section('content')
+
         <div
             class="h-[600px] z-50   max-w-full bg-cover bg-gray-200 bg-center bg-no-repeat flex justify-center items-center  tracking-wide">
             <div class="heading text-6xl max-tablet:text-2xl font-bold container grid gap-14">
-                <h1>Precise <span class="text-blue-900"> market intelligence </span>and <span
+                <h1 data-aos="fade-right">Precise <span class="text-blue-900"> market intelligence </span>and <span
                         class="text-blue-900">advisory</span>.</h1>
-                <h3>
+
+                <h3 data-aos="fade-left">
                     <span
                         class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
                         <span class="relative text-white">25000+</span>
@@ -32,21 +34,22 @@
             </div>
         </div>
 
-
         {{-- Our clients --}}
-        <div class=" text-center justify-between py-8 ">
+        <div class=" text-center justify-between py-8" data-aos="fade-up">
             <h3 class="text-3xl font-bold text py-8 text-gray-700  ">Our clients</h3>
-
+             
         </div>
 
         {{-- Our blogs --}}
         <div class="w-full py-8 ">
-            <h3 class="text-3xl font-bold text py-8 uppercase text-center justify-between text-gray-700 ">Blogs</h3>
+            <h3 class="text-3xl font-bold text py-8 uppercase text-center justify-between text-gray-700 "
+                data-aos="fade-up">Blogs</h3>
             <div class="  flex flex-wrap gap-10 justify-center">
 
-                <div class="max-w-sm rounded overflow-hidden shadow-lg  hover:shadow-xl">
+                {{-- <x-blogs img_url="{{ url('/images/website/blogs/blog-1.jpeg') }}"/> --}}
+                <div class="max-w-sm rounded overflow-hidden shadow-lg  hover:shadow-xl" data-aos="fade-right">
                     <img class="object-fill h-48 w-96 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                        src="{{ url('public/images/website/blogs/blog-1.jpeg') }}" alt="Sunset in the mountains" />
+                        src="{{ url('/images/website/blogs/blog-1.jpeg') }}" alt="Sunset in the mountains" />
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
                         <p class="text-gray-700 text-base">
@@ -59,14 +62,13 @@
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
                         <span
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+
                     </div>
                 </div>
 
-                <div class="max-w-sm rounded overflow-hidden shadow-lg  hover:shadow-xl">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg  hover:shadow-xl" data-aos="zoom-in">
                     <img class="object-fill h-48 w-96 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                        src="{{ url('public/images/website/blogs/blog-2.jpeg') }}" alt="Sunset in the mountains">
+                        src="{{ url('/images/website/blogs/blog-2.jpeg') }}" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
                         <p class="text-gray-700 text-base">
@@ -79,14 +81,13 @@
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
                         <span
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+
                     </div>
                 </div>
 
-                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl" data-aos="fade-left">
                     <img class="object-fill h-48 w-96 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                        src="{{ url('public/images/website/blogs/blog-3.jpeg') }}" alt="Sunset in the mountains">
+                        src="{{ url('/images/website/blogs/blog-3.jpeg') }}" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
                         <p class="text-gray-700 text-base">
@@ -99,8 +100,7 @@
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
                         <span
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+
                     </div>
                 </div>
 
@@ -111,16 +111,17 @@
 
         {{-- letest reports --}}
         <div class="">
-            <h3 class=" text-center justify-between  py-8 text-gray-700 text-3xl max-tablet:text-2xl font-bold">Letest
+            <h3 class=" text-center justify-between  py-8 text-gray-700 text-3xl max-tablet:text-2xl font-bold"
+                data-aos="fade-up">Letest
                 reports</h3>
-            <div class="flex justify-between gap-3 mb-16 mx-5">
+            <div class="flex justify-between gap-3 mb-16 mx-5" data-aos="fade-up">
                 {{-- <x-releted-reports-card/> --}}
-                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl">
-                    <img class="object-fill h-48 w-96 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                        src="{{ url('public/images/website/blogs/blog-3.jpeg') }}" alt="Sunset in the mountains">
+                <div class="max-w-72 justify-between text-center rounded overflow-hidden shadow-lg hover:shadow-xl">
+                    <img class="object-fill justify-self-center h-48 w-54 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                        src="{{ url('/images/website/blogs/blog-3.jpeg') }}" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p class="text-gray-700 text-base">
+                        <p class="text-gray-700 text-base text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
                             perferendis eaque, exercitationem praesentium nihil.
                         </p>
@@ -130,17 +131,16 @@
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
                         <span
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+
                     </div>
                 </div>
 
-                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl">
-                    <img class="object-fill h-48 w-96 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110" src="{{ url('public/images/website/blogs/blog-1.jpeg') }}"
-                        alt="Sunset in the mountains">
+                <div class="max-w-72 justify-between text-center rounded overflow-hidden shadow-lg hover:shadow-xl">
+                    <img class="object-fill justify-self-center h-48 w-54 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                        src="{{ url('/images/website/blogs/blog-1.jpeg') }}" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p class="text-gray-700 text-base">
+                        <p class="text-gray-700 text-base text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
                             perferendis eaque, exercitationem praesentium nihil.
                         </p>
@@ -150,18 +150,17 @@
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
                         <span
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+
                     </div>
                 </div>
 
 
-                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl">
-                    <img class="object-fill h-48 w-96 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110" src="{{ url('public/images/website/blogs/blog-2.jpeg') }}"
-                        alt="Sunset in the mountains">
+                <div class="max-w-72 justify-between text-center rounded overflow-hidden shadow-lg hover:shadow-xl">
+                    <img class="object-fill justify-self-center h-48 w-54 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                        src="{{ url('/images/website/blogs/blog-2.jpeg') }}" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p class="text-gray-700 text-base">
+                        <p class="text-gray-700 text-base text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
                             perferendis eaque, exercitationem praesentium nihil.
                         </p>
@@ -171,11 +170,32 @@
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
                         <span
                             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+
+                    </div>
+                </div>
+
+
+                <div class="max-w-72 justify-between text-center rounded overflow-hidden shadow-lg hover:shadow-xl">
+                    <img class="object-fill justify-self-center h-48 w-54 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                        src="{{ url('/images/website/blogs/blog-2.jpeg') }}" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                        <p class="text-gray-700 text-base text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                            perferendis eaque, exercitationem praesentium nihil.
+                        </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
                         <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+
                     </div>
                 </div>
 
             </div>
         </div>
+
+       
     @endsection

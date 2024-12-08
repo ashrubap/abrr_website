@@ -2,7 +2,7 @@
 
 <div class=" w-56 bg-white justify-between justify-items-center rounded overflow-hidden shadow-lg  hover:shadow-xl group ">
     <a href="#">
-        <img class="rounded-t-lg w-52 h-32  transition duration-300 ease-in-out group-hover:scale-105" src="https://flowbite.com/docs/images/blog/image-4.jpg" alt="" />
+        <img class="rounded-t-lg w-52 h-32  transition duration-300 ease-in-out group-hover:scale-105" src="{{ url('images/website/image-4.jpg') }}" alt="" />
     </a>
     <div class="p-1">
        
