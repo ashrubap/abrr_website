@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use App\View\Components\Alert;
+use App\View\Components\Blogs;
 use Illuminate\Support\ServiceProvider;
-
+use Illuminate\Support\Facades\Blade;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -19,6 +21,5 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
     }
 }

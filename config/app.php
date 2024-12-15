@@ -40,7 +40,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/ashruba/abrr_website/'),
+    'url' => env('APP_URL', 'http://localhost/abrr_website/'),
 
     /*
     |--------------------------------------------------------------------------
