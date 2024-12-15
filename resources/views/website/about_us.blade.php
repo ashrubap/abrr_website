@@ -2,7 +2,7 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
 @section('content')
-    <div class=" my-5 bg-blue-500 ">
+    <div class=" my-5 bg-gradient-to-r from-indigo-400 to-cyan-400 ">
 
         <div class="container ">
             <div class="w-full  justify-between text-center">
@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="container">
-        <div class=" grid grid-cols-2 gap-5 py-14">
+        <div class=" grid grid-cols-2 gap-5 ">
             <div>
                 <h2 class="font-bold text-1xl text-gray-500 py-3">About US Title</h2>
                 <img src="{{ url('/images/website/contact_us_1.jpg') }}" alt="img" class="w-fit h-96 m-auto p-5 transition duration-300 ease-in-out hover:scale-110">

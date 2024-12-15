@@ -98,13 +98,125 @@
             </div>
         </div>
     </footer>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ asset('asset/js/aos.js') }}"></script>
+    <script src="{{ asset('asset/js/swiper-bundle.min.js') }}"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" ></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/fontawesome.min.js"></script> --}}
     <script>
-      AOS.init({
-        easing: 'ease-in-out-sine'
-      });
-    </script>
-</body>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        $(document).ready(function() {
 
-</html>
+            new Swiper('.our_client_swiper', {
+                spaceBetween: 30,
+                // centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    375: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                     640: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 40,
+                    },
+                },
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                //   scrollbar: {
+                //     el: '.swiper-scrollbar',
+                //   },
+            });
+
+            new Swiper('.why_choose_us_slider', {
+    //             effect: "cards",
+    //   grabCursor: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            new Swiper('.releted_reports_slider', {
+                spaceBetween: 30,
+                // centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 40,
+                    },
+                },
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            });
+
+
+        })
+    </script>
+    </body>
+
+    </html>

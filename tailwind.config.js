@@ -14,10 +14,10 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            
         },
-        backgroundImage: {
-            'home-bg-1': "url('/public/images/website/home-bg-1.jpg')",
-        },
+
+      
         container: {
             padding: {
                 DEFAULT: '1rem',
@@ -37,14 +37,6 @@ export default {
             },
         },
         screens: {
-            'tablet': '640px',
-            // => @media (min-width: 640px) { ... }
-
-            'laptop': '1024px',
-            // => @media (min-width: 1024px) { ... }
-
-            'desktop': '1280px',
-            // => @media (min-width: 1280px) { ... }
             'sm': '640px',
             // => @media (min-width: 640px) { ... }
 
@@ -61,5 +53,7 @@ export default {
             // => @media (min-width: 1536px) { ... }
         },
     },
-    plugins: [],
+    plugins: [
+        // require('@tailwindcss/forms'),
+    ],
 };
