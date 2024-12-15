@@ -8,13 +8,19 @@ use Illuminate\View\Component;
 
 class Blogs extends Component
 {
-    public $img_url;
+    public $imageUrl;
+    public $fadeAnimation;
+    public $title;
+    public $message;
     /**
      * Create a new component instance.
      */
-    public function __construct($img_url = "")
+    public function __construct($imageUrl, $title, $message="", $fadeAnimation="")
     {
-        $this->img_url = $img_url;
+        $this->imageUrl = $imageUrl;
+        $this->title = $title;
+        $this->message = $message;
+        $this->fadeAnimation = $fadeAnimation;
     }
 
     /**

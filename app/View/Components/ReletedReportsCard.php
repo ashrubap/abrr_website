@@ -8,12 +8,19 @@ use Illuminate\View\Component;
 
 class ReletedReportsCard extends Component
 {
+    public $sortDescription;
+    public $reportImageUrl;
+    public $title;
+    public $imageAlt;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($title="",$sortDescription="",$reportImageUrl="",$imageAlt="")
     {
-        //
+        $this->imageAlt=$imageAlt;
+        $this->title=$title;
+        $this->sortDescription=$sortDescription;
+        $this->reportImageUrl=$reportImageUrl;
     }
 
     /**

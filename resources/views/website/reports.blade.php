@@ -2,110 +2,86 @@
 @section('content')
     {{-- breade crum --}}
 
-    <div class="mx-5">
+    <div class="mx-16 max-md:mx-5  max-lg:mx-8">
         <div class="breadcrumb px-2 mb-4 py-2 ">
             <x-breadcrumb />
         </div>
-        <div class=" grid grid-flow-row-dense grid-cols-5 gsp-5 justify-between gap-5 report_list">
-            <div class=" h-screen sticky top-0 overflow-y-scroll no-scrollbar max-tablet:hidden ">
-                <span class="text-lg font-medium text-center">Category</span>
-                <div class="border-2 shadow-md rounded-md  ">
-                    <ul class="tracking-wide text-md leading-tight font-small text-black px-1 g">
+        <div class=" grid grid-flow-row-dense grid-cols-5 gsp-5 justify-between gap-5 report_list ">
+            <div class=" h-screen sticky top-24 overflow-y-scroll no-scrollbar max-md:hidden gap-4 ">
+                <div class="flex flex-col gap-5">
+                    <div class="w-full ">
+                        <span class="text-lg font-medium">Category</span>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-2 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer">
+                                <option value="" selected>Category</option>
+                                <option value="Aerospace & Defense">Aerospace & Defense</option>
+                                <option value="Agriculture">Agriculture</option>
+                                <option value="Animal Nutrition & Wellness">Animal Nutrition & Wellness</option>
+                                <option value="Automotive">Automotive</option>
+                                <option value="Chemicals & Materials">Chemicals & Materials</option>
+                                <option value="Consumer Goods and Services">Consumer Goods and Services</option>
+                                <option value="Energy & Power">Energy & Power</option>
+                                <option value="Financial Services and Investment Intelligence">Financial Services and
+                                    Investment
+                                    Intelligence</option>
+                                <option value="Food & Beverage">Food & Beverage</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Home and Property Improvement">Home and Property Improvement</option>
+                                <option value="Hospitality and Tourism">Hospitality and Tourism</option>
+                                <option value="Logistics">Logistics</option>
+                                <option value="Manufacturing Products and Services">Manufacturing Products and Services
+                                </option>
+                                <option value="Packaging">Packaging</option>
+                                <option value="Professional and Commercial Services">Professional and Commercial Services
+                                </option>
+                                <option value="Real Estate and Construction">Real Estate and Construction</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Technology, Media and Telecom">Technology, Media and Telecom</option>
+                            </select>
 
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/aerospace-defense" target="_blank">
-                                Aerospace &amp; Defense</a> </li>
+                        </div>
+                    </div>
 
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/agriculture" target="_blank">
-                                Agriculture</a> </li>
 
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/animal-nutrition" target="_blank">
-                                Animal Nutrition &amp; Wellness</a> </li>
+                    <div class="w-full ">
+                        <span class="text-lg font-medium text-center">Regions</span>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded pl-3 pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer">
+                                <option value="" selected>All</option>
+                                <option value="Africa">Africa</option>
+                                <option value="Central America">Central America </option>
+                                <option value="Middle East">Middle East</option>
+                                <option value="Pacific">Pacific</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Europe">Europe</option>
+                                <option value="North America">North America</option>
+                                <option value="South America">South America</option>
 
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/automotive" target="_blank">
-                                Automotive</a> </li>
 
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/chemicals-materials"
-                                target="_blank">
-                                Chemicals &amp; Materials</a> </li>
+                            </select>
 
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/consumer-goods-and-services"
-                                target="_blank">
-                                Consumer Goods and Services</a> </li>
+                        </div>
+                    </div>
 
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/energy-power" target="_blank">
-                                Energy &amp; Power</a> </li>
+                <button class=" w-24 px-3 py-1 bg-blue-700 text-white rounded-md shadow-md hover:bg-blue-600">Filter</button>
 
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/financial-services-and-investment-intelligence"
-                                target="_blank">
-                                Financial Services and Investment Intelligence</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/food-beverage" target="_blank">
-                                Food &amp; Beverage</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/healthcare" target="_blank">
-                                Healthcare</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/home-property-improvement"
-                                target="_blank">
-                                Home and Property Improvement</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/hospitality-and-tourism"
-                                target="_blank">
-                                Hospitality and Tourism</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/logistics" target="_blank">
-                                Logistics</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/manufacturing-products-and-services"
-                                target="_blank">
-                                Manufacturing Products and Services</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/packaging" target="_blank">
-                                Packaging</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/professional-and-commercial-services"
-                                target="_blank">
-                                Professional and Commercial Services</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/real-estate-and-construction"
-                                target="_blank">
-                                Real Estate and Construction</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/retail" target="_blank">
-                                Retail</a> </li>
-
-                        <li class="my-1 px-2 py-1 hover:bg-gray-600 hover:text-white hover:rounded-md "> <a
-                                href="https://www.mordorintelligence.com/market-analysis/technology-media-and-telecom"
-                                target="_blank">
-                                Technology, Media and Telecom</a> </li>
-
-                    </ul>
                 </div>
+
             </div>
-            <div class="col-span-4 gap-5 max-tablet:col-span-5">
-                <x-report-details-card />
-                <x-report-details-card />
-                <x-report-details-card />
-                <x-report-details-card />
-                <x-report-details-card />
+            <div class="col-span-4 gap-5 max-md:col-span-5">
+
+                @foreach ($reports as $report_url => $report_desc)
+                    <x-reports-list-card reportTitle="{{ $report_desc['report_title'] }}"
+                        reportUrl="{{ url('reports/' . $report_url) }}"
+                        thumbnailImageUrl="{{ url('/images/website/blogs/blog-3.jpeg') }}"
+                        thumbnailImageAlt="{{ url('/images/website/blogs/blog-3.jpeg') }}"
+                        sortDescription="{{ $report_desc['report_sort_desc'] }}" />
+                @endforeach
+
+
+
             </div>
         </div>
     </div>
